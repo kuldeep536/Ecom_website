@@ -1,0 +1,1263 @@
+/*body*/
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Kablammo&family=Kanit:wght@300&family=Moirai+One&family=Mukta:wght@800&family=Oswald:wght@300;700&family=Phudu:wght@900&family=Roboto+Condensed&family=Roboto+Slab&family=Teko:wght@600&family=Unbounded:wght@500;900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Kablammo&family=Kanit:wght@300&family=Moirai+One&family=Mukta:wght@800&family=Oswald:wght@300;700&family=Phudu:wght@900&family=Roboto+Condensed&family=Roboto+Slab&family=Teko:wght@600&family=Unbounded:wght@500;900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Kablammo&family=Kanit:wght@300;400&family=Moirai+One&family=Mukta:wght@800&family=Oswald:wght@300;700&family=Phudu:wght@900&family=Roboto+Condensed&family=Roboto+Slab&family=Teko:wght@600&family=Unbounded:wght@500;900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Black+Ops+One&family=Kablammo&family=Kanit:wght@300;400&family=Moirai+One&family=Mukta:wght@800&family=Oswald:wght@300;700&family=Phudu:wght@900&family=Roboto+Condensed&family=Roboto+Slab&family=Teko:wght@600&family=Unbounded:wght@500;900&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&family=Black+Ops+One&family=Kablammo&family=Kanit:wght@300;400&family=Moirai+One&family=Montserrat:wght@500&family=Mukta:wght@800&family=Oswald:wght@300;700&family=Phudu:wght@900&family=Roboto+Condensed&family=Roboto+Slab&family=Teko:wght@600&family=Unbounded:wght@500;900&family=VT323&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+/*Target nav */
+header{
+    padding: 0;
+    margin: 0;
+
+}
+.head-class:before{
+  content: '';
+  height: 86px;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  /* z-index: -1; */
+  animation-name: slow;
+  animation-duration: 1s;
+  
+
+}
+@keyframes slow {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+  
+}
+
+nav{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: unset;
+   
+}
+
+.custom-class-ul{
+  margin-left: 132px;
+}
+.web-logo{
+    font-size: 52px;
+    position: relative;
+    left: 20px;
+    color: rgb(86, 2, 196);
+    font-family: "Croissant One";
+}
+/*web logo span target*/
+.web-logo-spn{
+    color: black;
+}
+
+
+/*target inside nav */
+.custom-font {
+    font-family: 'Roboto Slab';
+    margin-right: 20px;
+    z-index: 2;
+    position: relative;
+    transition: background-color 2s ease-out;
+}
+
+.custom-font:hover {
+    color: red;
+    transform: scale(1.1);
+}
+
+/*main section start */
+
+main{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+    "cont-1 cont-1 cont-1 cont-1"
+    "cont-2 cont-2 cont-2 cont-2"
+    "cont-3 cont-3 cont-3 cont-3"
+    "cont-4 cont-4 cont-4 cont-4"
+    "cont-5 cont-5 cont-5 cont-5"
+    ;
+
+
+}
+
+.custom-search{
+ position: relative;
+ z-index: 2;
+}
+
+/*section1*/
+#cont-5{
+  grid-area: cont-5;
+  background-color: #191919;
+  height: 400px;
+}
+#cont-4{
+  grid-area: cont-4;
+  height: 800px;
+  margin-bottom: 30px;
+}
+#cont-3{
+  grid-area: cont-3;
+  height: 1000px;
+  background-position: center;
+  margin-top: 100px;
+}
+
+#cont-2{
+    grid-area: cont-2;
+    height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+   
+    flex-direction: column
+    ;
+}
+
+#cont-1{
+    grid-area: cont-1;
+    height: 660px;
+    margin-bottom: 20px;
+    background-position: center;
+}
+#cont-1::before{
+    content: '';
+    height: 660px;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    background: url(umg/pexels-ali-pazani-2829369.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+/*submit button css*/
+
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 30px;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+   /*main heading starts from here*/
+   #main-head{
+    height: 543px;
+    width: 700px;
+    margin-top: 106px;
+    margin-right: 620px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+   }
+
+   #heading{
+    width: 639px;
+    font-size: 55px;
+    letter-spacing: 3px;
+    color: #fefae0;
+    font-family: "Croissant One";
+    
+    font-weight: 600px;
+    margin-bottom: 255px;
+   }
+   .head-p{
+    position: relative;
+    bottom: 248px;
+    color: #673AB7;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: "Croissant One";
+   }
+   /*second submit button css*/
+   .second-btn1 {
+    bottom: 245px;
+    left: 136px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica,"sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #cfef00;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+  
+  .second-btn1:hover {
+    background: #c4e201;
+  }
+  
+  .second-btn1 > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+  }
+  
+  .second-btn1:hover svg {
+    transform: translateX(5px);
+  }
+  
+  .second-btn1:active {
+    transform: scale(0.95);
+  }
+  /*day night btn 
+  */
+  .toggle-switch {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    --light: #d8dbe0;
+    --dark: #28292c;
+    --link: rgb(27, 129, 112);
+    --link-hover: rgb(24, 94, 82);
+  }
+  
+  .switch-label {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: var(--dark);
+    border-radius: 25px;
+    cursor: pointer;
+    border: 3px solid var(--dark);
+  }
+  
+  .checkbox {
+    position: absolute;
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider {
+    background-color: var(--light);
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 12px -4px 0px 0px var(--light);
+    box-shadow: inset 12px -4px 0px 0px var(--light);
+    background-color: var(--dark);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .checkbox:checked ~ .slider::before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+    background-color: var(--dark);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .product{
+    height: 276px;
+    width: 200px;
+    border: 2px solid;
+  }
+
+  /*Second div starts from here */
+
+  /*shirts section*/
+
+ #products-icons{
+    font-size: 52px;
+    position: relative;
+    left: 20px;
+    color: rgb(86, 2, 196);
+    font-family: "Croissant One";
+
+  }
+  #shirts-logo{
+   color: black;
+
+  }
+
+
+  #custom-section-shirt{
+    display: flex;
+    
+    box-sizing: border-box;
+
+
+  }
+
+  #shirts-section-first{
+   display: flex;
+   flex-direction: column;
+   width: 242px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: backgroun color;
+    transition-duration: 2s;
+
+  }
+  #shirts-section-first:hover{
+    transform: scale(1.1);
+  }
+  
+    
+  
+
+  .shirt-span{
+    font-family: inter,sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #bdbdbd;
+  }
+
+ .shirt-h5{
+    font-family: 'Black Ops One';
+    font-size: medium;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition:  backgroun color;
+    transition-duration: 1s;
+  }
+ .shirt-h5:hover{
+    color:#4b78c5;
+   
+  }
+  .shirt-price{
+    font-size: 17px;
+    color: #212121;
+    font-weight: 500;
+    line-height: 1;
+  }
+ .inside-shirt-price{
+    font-size: 14px;
+    color: #878787;
+    text-decoration: line-through;
+  }
+  .shirt-size{
+    color: #878787;
+    font-weight: 50;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 2px;
+  }
+  .inside-shirt-size{
+    margin-left: 7px;
+    color: black;
+  }
+
+  /*second shirt */
+
+  #shirts-section-second{
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+     box-sizing: border-box;
+     cursor: pointer;
+     transition: backgroun color;
+    transition-duration: 2s;
+  }
+  #shirts-section-second:hover{
+    transform: scale(1.1);
+  }
+
+  /*third section*/
+  #shirts-section-third{
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+     box-sizing: border-box;
+     cursor: pointer;
+     transition: backgroun color;
+    transition-duration: 2s;
+  }
+  #shirts-section-third:hover{
+    transform: scale(1.1);
+  }
+  /*fourth shirt*/
+
+#shirts-section-fourth{
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+     box-sizing: border-box;
+     cursor: pointer;
+     transition: backgroun color;
+    transition-duration: 2s;
+  }
+  #shirts-section-fourth:hover{
+    transform: scale(1.1);
+  }
+
+  
+  
+/*  <div class="container" id="shirts">
+          <div class="sh" id="first-shirt">*/
+
+
+
+  /*to make responsive mediaa query*/
+ 
+
+/* hoodie section starts from here */
+
+#products-icons2{
+  font-size: 52px;
+    position: relative;
+    left: 20px;
+    color: rgb(86, 2, 196);
+    font-family: "Croissant One";
+
+}
+#hoodielogo{
+  color: black;
+}
+#custom-section-hoodies{
+  display: flex;
+  box-sizing: border-box;
+
+}
+
+/*first hoodie*/
+#hoodie-section-first{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-first:hover{
+  transform: scale(1.1);
+}
+
+/*second hoodie*/
+
+
+#hoodie-section-second{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-second:hover{
+  transform: scale(1.1);
+}
+
+/*third hoodie */
+
+#hoodie-section-third{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-third:hover{
+  transform: scale(1.1);
+}
+
+/*fourth hoodie*/
+
+#hoodie-section-fourth{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-fourth:hover{
+  transform: scale(1.1);
+}
+
+/*fivth hoodie*/
+
+#hoodie-section-fivth{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-fivth:hover{
+  transform: scale(1.1);
+}
+
+/*sixth hoodie*/
+#hoodie-section-sixth{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-sixth:hover{
+  transform: scale(1.1);
+}
+
+/*seventh hoodie*/
+
+#hoodie-section-seventh{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#hoodie-section-seventh:hover{
+  transform: scale(1.1);
+}
+
+/*more items*/
+#products-icons3{
+  font-size: 52px;
+    position: relative;
+    left: 20px;
+    color: rgb(86, 2, 196);
+    font-family: "Croissant One";
+
+}
+
+#more-items{
+  color: black;
+}
+#custom-section-moreitems{
+  display: flex;
+  box-sizing: border-box;
+
+}
+
+/*first item*/
+
+#item-section-first{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#item-section-first:hover{
+  transform: scale(1.1);
+}
+
+/*second item*/
+#item-section-second{
+  display: flex;
+  flex-direction: column;
+  width: 242px;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: backgroun color;
+  transition-duration: 2s;
+}
+#item-section-second:hover{
+  transform: scale(1.1);
+}
+
+
+/*About us section*/
+
+
+
+.about-section-css::before{
+  content: '';
+  height:974px;
+  width: 100%;
+  position: absolute;
+  background: url(umg/pexels-lumn-399160.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+#intro-h1{
+  height: 400px;
+}
+
+
+#inside-intro-h1{
+  height: 113px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    display: none;
+    text-rendering: optimizeLegibility;
+   
+}
+
+.inside-intro-ani{ 
+  animation-name: come-over;
+  animation-duration: 2s;
+}
+@keyframes come-over {
+  from{
+    opacity: 0;
+   margin-top: 0px;
+  }
+  to{
+    opacity: 1;
+    margin-top: 100px;
+  }
+  
+}
+
+
+
+#inside-intro-h1::before{
+  content: '';
+  position: absolute;
+  width: 85%;
+  height: 24%;
+  border-bottom: 1px solid white;
+  z-index: 1;
+  background-size: cover;
+  left: 102px;
+
+}
+
+#we-are-hello{
+  color: #000000;
+  font-family: "montserrat-bold", sans-serif;
+  font-size: 1.7rem;
+    line-height: 1.333;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-weight: 600;
+}
+
+#h1-about{
+  color: #FFFFFF;
+  font-family: "montserrat-medium", sans-serif;
+    font-size:xx-large;
+    line-height: 1.25;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+/*para intro*/
+
+.intro-para{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 122px;
+    display: none;
+}
+#p-tag-intro{
+  font-size: large;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    text-align: -webkit-center;
+}
+
+.intro-para-animation{
+  animation-name: intro-para;
+  animation-duration: 2s;
+}
+@keyframes intro-para {
+  from{
+    margin-top: 200px;
+    opacity: 0;
+  }
+  to{
+    margin-top: 122px;
+    opacity: 1;
+  }
+  
+}
+
+/*What we do section*/
+
+.what-we-do-section{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.what-we-div{
+  margin-top: 323px;
+}
+
+
+
+.do-main{
+  height: 290px;
+  width: 100%;
+ display: none;
+  justify-content: center;
+  margin-top: 88px;
+  flex-direction: column;
+  text-align: center;
+}
+.animation-do{
+  animation-name: upside;
+  animation-duration: 3s;
+  position: relative;
+}
+@keyframes upside {
+  from{
+  top: 400px;
+    opacity: 0;
+  }
+  to{
+    top: 0px;
+    opacity: 1;
+  }
+  
+}
+
+
+.do-main::before{
+  content: '';
+  position: absolute;
+  width: 65%;
+  height: 18%;
+  left: 255px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 221px;
+
+}
+
+.do-heading{
+  font-family:'Montserrat' ;
+    font-size: 1.7rem;
+    line-height: 1.333;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    color: rgb(86, 2, 196);;
+    font-weight: 900;
+    
+}
+
+.do-head-h1{
+  width: 796px;
+  margin: auto;
+  margin-bottom: 49px;
+  font-family:'Montserrat' ;
+    line-height: 1.255;
+    color: black;
+    font-weight: 600;
+}
+
+/*boxes of section-4*/
+
+.box-of{
+  height: 700px;
+  box-sizing: border-box;
+}
+
+.under-div{
+  display: flex;
+    height: 318px;
+}
+.under-div2{
+  display: flex;
+    height: 318px;
+}
+
+
+
+.box-1{
+  width: 500px;
+    /* margin-top: 50px; */
+    height: 159px;
+    margin-left: 138px;
+}
+
+.share-class-section4{
+  margin-bottom: 10px;
+  font-family: "Croissant One";
+    font-size: xxx-large;
+    width: 451px;
+    font-weight: 500;
+    position: relative;
+    left: 20px;
+}
+.share-class-section4-ptag{
+  font-weight: 500;
+  color: #757575;
+  box-sizing: inherit;
+  line-height: 1.4;
+  font-family: "lora-regular", serif;
+  position: relative;
+  left: 20px;
+ 
+}
+
+.custom-icon{
+  margin-right: 8px;
+    font-size: smaller;
+    color: rgb(86, 2, 196);
+}
+
+/*box-2*/
+
+.box-2{
+  width: 500px;
+    /* margin-top: 50px; */
+    height: 159px;
+    margin-left: 138px;
+
+}
+
+
+/*boxof-2*/
+
+
+.box-of-2{
+  height: 700px;
+  box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    height: 700px;
+    position: relative;
+    top: 150px;
+
+}
+/*box-3*/
+
+
+
+.box3{
+  width: 500px;
+  /* margin-top: 50px; */
+  height: 159px;
+  margin-left: 138px;
+
+}
+
+
+
+/*footer*/
+footer {
+ 
+  height: 400px;
+}
+
+.foot-div {
+  background-color: #191919;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.foot-divs {
+  height: 200px;
+  width: 200px;
+  border: 2px solid white;
+  position: relative;
+  bottom: 20px;
+}
+
+#first-part {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+}
+
+#logo {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: math;
+  text-decoration: underline 3px white;
+}
+
+#color {
+  color: #e7ab3c;
+}
+
+#ptag-foot {
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  font-family: 'Roboto Slab'
+}
+
+#contact-num {
+
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  font-family: 'Roboto Slab'
+}
+
+#email {
+  color: #b2b2b2;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  font-family: 'Roboto Slab'
+}
+
+#second-div {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+#information {
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  font-family: 'Roboto Slab'
+}
+
+.foot-ul {
+  height: 169px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: larger;
+}
+.foot-li{
+  position: relative;
+  right: 29px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#third-div{
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+#accounts{
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  font-family: 'Roboto Slab'
+}
+#fourth-div{
+  display: flex;
+  flex-direction: column;
+  border: none;
+  width: 335px;
+}
+#enter-mail{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Roboto Slab'
+}
+#email-div{
+  width: 339px;
+  display: flex;
+
+}
+#mail{
+  position: relative;
+  left: 4px;
+  border: none;
+  height: 41px;
+  text-align: center;
+  width: 232px;
+  background-color:#303030 ;
+}
+#sub-btn{
+  border: navajowhite;
+  height: 41px;
+  width: 100px;
+  text-align: center;
+  background: #e7ab3c;
+}
+#sub-spn{
+  color: #ffffff;
+  background: #e7ab3c;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+
+
+
+
+
+
+
+/*responsive*/
+
+@media (min-width:350px) and (max-width:896px) {
+  html,body{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #main-head{
+    width: 384px;
+  }
+  #heading{
+    width: 363px;
+    font-size: 53px;
+  }
+  #cont-1{
+    width: 376px;
+  }
+  .second-btn1{
+    bottom: 188px;
+  }
+
+  #custom-section-shirt{
+    flex-direction: column;
+    align-items: center;
+  }
+  #products-icons{
+    font-size: 39px;
+    left: 0;
+  }
+
+  .head-p{
+    font-size: 19px;
+  }
+
+  /*hoodies*/
+
+  #products-icons2{
+    font-size: 39px;
+    left: 0;
+  }
+  #custom-section-hoodies{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*more items*/
+  #products-icons3{
+    font-size: 39px;
+    left: 0;
+  }
+  #custom-section-moreitems{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*intro para*/
+  #inside-intro-h1::before{
+    left: 27px;
+  }
+  #p-tag-intro{
+    font-size: 13px;
+  }
+
+  /*what we do section*/
+
+  .do-main:before{
+    left: 40px;
+    width: 77%;
+    margin-bottom: 302px;
+  }
+  .do-head-h1{
+    width: 391px;
+    font-size: x-large;
+    margin-bottom: 62px;
+  }
+
+  /*box*/
+
+  .box-of{
+    flex-direction: column;
+  }
+
+  .box-1{
+    width: 219px;
+    height: 147px;
+    margin-left: 77px;
+  }
+  .share-class-section4{
+    margin-right: 13px;
+    width: 209px;
+    left: 20px;
+  }
+  .share-class-section4-ptag{
+    font-size: smaller;
+  }
+
+  .box-2{
+    position: relative;
+    top: 300px;
+    margin-left: 77px;
+    width: 219px;
+    margin-top: 50px;
+  }
+
+  .under-div{
+    flex-direction: column;
+  }
+  .under-div2{
+    flex-direction: column;
+    position: relative;
+    top: 600px;
+  }
+  /*foot*/
+  #cont-5{
+    margin-top: 1120px;
+    width: 414px;
+    height:  1050px;
+  }
+  .foot-div{
+    position: relative;
+    flex-direction: column;
+    top: 213px;
+  }
+
+  .foot-divs{
+    margin-bottom: 76px;
+    position: relative;
+    top: 154px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+ 
+  
